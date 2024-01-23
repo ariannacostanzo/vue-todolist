@@ -31,9 +31,13 @@
                 {{task.text}}
                 <button type="button" class="btn-close" @click="removeTask(task.id)"></button>
             </li>
+            <li class="list-group-item"><div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Aggiungi task">
+              <span id="add" type="button" class="input-group-text "><i class="fa-solid fa-plus"></i></span>
+            </div></li>
           </ul>
-        
-
+          
+        <h2 v-if="!tasks.length">Non ci sono tasks</h2>
 
 
 
