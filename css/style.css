@@ -25,3 +25,7 @@ h2 {
     background-color: rgba(128, 128, 128, 0.521);
     transition: .5s;
 }
+
+label {
+    cursor: pointer;
+}
