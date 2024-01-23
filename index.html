@@ -43,6 +43,13 @@
           </ul>
           
         <h2 v-if="!tasks.length">Non ci sono tasks</h2>
+        
+        <!-- mass operations -->
+        <div class="btn-group" role="group" aria-label="Basic example" v-show="tasks.length">
+            <button type="button" class="btn btn-primary" @click="setAllAs(false)">Tutti da fare</button>
+            <button type="button" class="btn btn-success" @click="setAllAs(true)">Tutti fatti</button>
+            <button type="button" class="btn btn-danger" @click="deleteAll">Elimina tutti</button>
+          </div>
 
     </div>
 

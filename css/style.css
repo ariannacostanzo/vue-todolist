@@ -29,3 +29,8 @@ h2 {
 label {
     cursor: pointer;
 }
+
+.btn-group {
+    margin-top: 1rem;
+    width: 30%;
+}

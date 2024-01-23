@@ -28,6 +28,14 @@ const app = createApp ({
         },
         setDoneTask(id) {
             this.tasks.forEach((task) => {if (id === task.id) task.done = !task.done}) 
+        },
+        setAllAs(value) {
+            this.tasks.forEach((task) => {
+                task.done = value
+            })
+        },
+        deleteAll() {
+            this.tasks = []
         }
     }
 
