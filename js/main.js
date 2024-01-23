@@ -9,6 +9,11 @@ const app = createApp ({
             tasks,
 
         }
+    },
+    methods: {
+        removeTask(id) {
+            this.tasks.forEach((task, i) => {if (id === task.id) this.tasks.splice(i, 1)}) 
+        }
     }
 
 

@@ -27,7 +27,10 @@
         <h2>Cose da fare</h2>
 
         <ul class="list-group">
-            <li v-for="task in tasks" class="list-group-item" :class="{'text-decoration-line-through' : task.done}">{{task.text}}</li>
+            <li v-for="task in tasks" class="list-group-item d-flex justify-content-between" :class="{'text-decoration-line-through' : task.done}">
+                {{task.text}}
+                <button type="button" class="btn-close" @click="removeTask(task.id)"></button>
+            </li>
           </ul>
         
 
