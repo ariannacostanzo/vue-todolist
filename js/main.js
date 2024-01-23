@@ -24,8 +24,8 @@ const app = createApp ({
                 }
     
                 this.tasks.push(newTask)
-    
                 this.newTaskText = ''
+
             } else {
                 return
             }
