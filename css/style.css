@@ -1,6 +1,7 @@
 #root {
     text-align: center;
-    margin-top: 2rem;
+    margin: 2rem auto;
+    width: 30%;
 }
 
 h1 {
@@ -14,11 +15,7 @@ h2 {
 }
 
 .list-group {
-    width: 30%;
-    margin: 0 auto;
-    margin-top: 1.5rem;
     text-align: left;
-    text-transform: capitalize;
 }
 
 #add:hover {
@@ -31,6 +28,5 @@ label {
 }
 
 .btn-group {
-    margin-top: 1rem;
-    width: 30%;
+    width: 100%;
 }
