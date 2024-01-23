@@ -32,8 +32,8 @@
                 <button type="button" class="btn-close" @click="removeTask(task.id)"></button>
             </li>
             <li class="list-group-item"><div class="input-group flex-nowrap">
-                <input type="text" class="form-control" placeholder="Aggiungi task">
-              <span id="add" type="button" class="input-group-text "><i class="fa-solid fa-plus"></i></span>
+                <input type="text" class="form-control" placeholder="Aggiungi task" v-model="newTaskText">
+              <span id="add" type="button" class="input-group-text " @click="addTask"><i class="fa-solid fa-plus"></i></span>
             </div></li>
           </ul>
           
