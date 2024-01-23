@@ -3,10 +3,11 @@
 const {createApp} = Vue;
 
 const app = createApp ({
+    name: 'ToDo List',
     data() {
         return {
             tasks,
-            
+
         }
     }
 

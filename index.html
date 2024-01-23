@@ -19,7 +19,17 @@
 <body>
 
     <div id="root">
+        <header class="d-flex align-items-center justify-content-center gap-2">
+            <img src="Logo.png" alt="boolean logo" id="logo">
+            <h1> Boolean</h1>
+        </header>
 
+        <h2>Cose da fare</h2>
+
+        <ul class="list-group">
+            <li v-for="task in tasks" class="list-group-item" :class="{'text-decoration-line-through' : task.done}">{{task.text}}</li>
+          </ul>
+        
 
 
 
